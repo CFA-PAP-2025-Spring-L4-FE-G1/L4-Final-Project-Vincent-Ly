@@ -31,11 +31,16 @@ async function getRecipes(search) {
 
         let result = [];
         for(let meal of data.meals) {
-            let resultItem = [];
+            let resultItem = []; //this will contain the meal name, instrucs, and ingreds
+
             let mealName = meal.strMeal;
             console.log(mealName);//
+            resultItem.push(mealName);
+
             let mealInstructions = meal.strInstructions;
             console.log(mealInstructions);//
+            resultItem.push(mealInstructions);
+
             let mealIngredients = [];
             for(let i = 1; i < Number.MAX_SAFE_INTEGER; i++) {
                 let ingred = strIngredient + i.toString();
@@ -48,6 +53,7 @@ async function getRecipes(search) {
                     mealIngredients.push(ingred);
                 }
             }
+            resultItem.push(mealIngredients);
         }
         return result;
     }
