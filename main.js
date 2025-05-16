@@ -2,12 +2,7 @@
 let access_token = ""
 let zip_code = 70100688 //TEMP
 
-fetch("https://cors-anywhere.herokuapp.com/https://api-ce.kroger.com/v1/locations?filter.zipCode.near=98037", {
-headers: {
-    "Accept": "application/json",
-    "Authorization": `Bearer ${access_token}`
-}
-})
+fetch("/storeSearch")
 .then(result => result.json())
 .then(data => console.log(data))
 .catch(err => console.error(err));
@@ -18,13 +13,9 @@ headers: {
 
 
 //RECIPE
-let recipeAPIURL = "https://cors-anywhere.herokuapp.com/www.themealdb.com/api/json/v1/1/search.php?s="
+let recipeAPIURL = "www.themealdb.com/api/json/v1/1/search.php?s="
 const params = {
-    method: 'GET',
-    headers: {
-        "Accept": "application/json",
-        "Authorization": `Bearer ${access_token}`
-    }
+    method: 'GET'
 }
 
 function showRecipes(meals) {
@@ -53,8 +44,8 @@ async function getRecipes(search) {
                     console.log("stop at", i);//
                     break;
                 } else {
-
-                    mealIngredients.push(meal.ingred);
+                    console.log("pushing ", ingred);//
+                    mealIngredients.push(ingred);
                 }
             }
         }
