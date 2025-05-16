@@ -1,7 +1,5 @@
-## This rule redirects to an external API, signing requests with a secret
 [[redirects]]
   from    = "/storeSearch"
-  to      = "https://api-ce.kroger.com/v1/locations?filter.zipCode.near=98037"
+  to      = "/.netlify/functions/storeSearch"
   status  = 200
-  force   = true  # ensure that we always redirect
-  headers = { "X-From" = "Netlify", Accept = "application/json", Authorization = "Bearer $ACCESS_TOKEN" }
+  force   = true
