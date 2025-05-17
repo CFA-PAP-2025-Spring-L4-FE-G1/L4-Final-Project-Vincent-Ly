@@ -1,5 +1,0 @@
-[[redirects]]
-  from    = "/storeSearch"
-  to      = "/.netlify/functions/storeSearch"
-  status  = 200
-  force   = true

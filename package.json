@@ -1,13 +1,33 @@
 {
 
-    "name": "node-fetch-example",
+    "name": "express-server",
   
     "version": "1.0.0",
   
+    "description": "A basic Express server with CORS and node-fetch",
+  
     "dependencies": {
   
-      "node-fetch": "^3.0.0"
+      "express": "^4.18.2",
   
-    }
+      "cors": "^2.8.5",
+  
+      "node-fetch": "^3.3.0"
+  
+    },
+  
+    "scripts": {
+  
+      "start": "node index.js"
+  
+    },
+  
+    "engines": {
+  
+      "node": ">=18.0.0"
+  
+    },
+  
+    "author": "Your Name"
   
   }
