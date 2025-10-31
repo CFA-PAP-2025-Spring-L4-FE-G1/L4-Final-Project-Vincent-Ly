@@ -10,11 +10,11 @@ It provides a solution in a feature with intuitive UI, many recipes, and a large
 
 # Resources
 Styling
-- https://tailwindcss.com/plus
+* https://tailwindcss.com/plus
 API
-- https://developer.kroger.com/api-products
-- https://www.themealdb.com/api.php
+* https://developer.kroger.com/api-products
+* https://www.themealdb.com/api.php
 Node
-- https://www.npmjs.com/package/dotenv
-- https://www.npmjs.com/package/express
-- https://www.npmjs.com/package/node-fetch
+* https://www.npmjs.com/package/dotenv
+* https://www.npmjs.com/package/express
+* https://www.npmjs.com/package/node-fetch
